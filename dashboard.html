@@ -153,17 +153,56 @@
       </div>
     </section>
     <main id="main" class="hidden w-full h-[100vh] flex-row flex-nowrap my-20">
-      <div class="h-[90vh] px-10 w-[29vw] rounded-4xl bg-neutral-600 ml-17">
-
+      <div id="sidebar" class="h-[90vh] px-10 w-[29vw] rounded-4xl bg-[#A5C5BB] ml-17">
+        <ul class="m-8 mt-20 leading-20 text-xl">
+          <li id="mainButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/menu.png" class="h-5 pr-1"><span>Main</span></li>
+          <li id="flashcardsButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/cards.png" class="h-7 pr-1"><span>Flashcards</span></li>
+          <li id="quizzesButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/online-test.png" class="h-7 pr-1"><span>Quizzes</span></li>
+          <li id="audioButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/musical-note.png" class="h-6 pr-1"><span class="leading-5">Music & Ambience</span></li>
+        </ul>
       </div>
-      <div class="grid grid-cols-2 grid-rows-3 w-full h-[90vh] mx-6 gap-5">
-        <div id="subjecSelect" class="col-span-1 row-span-1 bg-neutral-300 rounded-3xl w-full"></div>
-        <div class="col-span-1 row-span-2 rounded-3xl w-full flex justify-center items-center">
-          <div class="bg-neutral-300 w-[80%] h-[90%] rounded-3xl"></div>
+      <div  id="mainMenu" class="flex flex-col lg:grid grid-cols-2 grid-rows-3 w-full h-[90vh] mx-6 gap-5">
+        <div id="subjecSelect" class="col-span-1 row-span-1 bg-[#A5C5BB]/60 rounded-[55px] w-full flex flex-col">
+          <h3 class="pl-10 pt-7 text-2xl text-[#2D296B]">Subjects</h3>
+          <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
+            <option value="Microbiology">Microbiology</option>
+            <option value="CS50">Harvard CS50</option>
+            <option value="German">German</option>
+          </select>
+          <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
+            <option value="Microbiology">Microbiology</option>
+            <option value="CS50">Harvard CS50</option>
+            <option value="German">German</option>
+          </select>
+          <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
+            <option value="Microbiology">Microbiology</option>
+            <option value="CS50">Harvard CS50</option>
+            <option value="German">German</option>
+          </select>
         </div>
-        <div class="col-span-1 row-span-2 bg-neutral-300 rounded-3xl w-full"></div>
-        <div class="col-span-1 row-span-1 bg-neutral-300 rounded-3xl w-full"></div>
+        <div class="col-span-1 row-span-2 rounded-[55px] w-full flex justify-center items-center">
+          <div class=" bg-[#A5C5BB]/60 w-[80%] h-[100%] rounded-[55px] flex flex-col">
+            <div class="bg-black h-[300px] w-[300px] rounded-[55px] self-center mt-10">
+              <img class="rounded-[inherit]" src="assets/desk.jpg" alt="default song">
+            </div>
+            <div class="flex justify-center my-2">
+              <span class="text-2xl">Song name</span>
+            </div>
+            <div class="flex flex-row flex-nowrap justify-center">
+              <img draggable="false" src="assets/rewind-symbol.png" class="h-20 m-5">
+              <img draggable="false" src="assets/play-button-arrowhead.png" class="h-20 m-5">
+              <img draggable="false" src="assets/fast-forward.png" class="h-20 m-5">
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 row-span-2  bg-[#A5C5BB]/60 rounded-[55px] w-full"></div>
+        <div class="col-span-1 row-span-1 w-full flex items-center">
+          <span class="text-[180px] text-center text-[#2D296B]">00:00</span>
+        </div>
       </div>
+      <div id="flashcards" class="hidden h-full w-full bg-amber-50"></div>
+      <div id="quizzesSection" class="hidden h-full w-full bg-neutral-300"></div>
+      <div id="audioSection" class="hidden h-full w-full bg-yellow-300"></div>
     </main>
     <footer
       class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-[#A5C5BB] rounded-3xl"
