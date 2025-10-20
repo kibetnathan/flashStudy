@@ -14,11 +14,7 @@
         <div class="flex items-center justify-between">
           <div class="flex shrink-0">
             <a aria-current="page" class="flex items-center h-fit" href="/">
-              <img
-                class="h-7 w-auto"
-                src="assets/focus.png"
-                alt="flashStudy"
-              />
+              <img class="h-7 w-auto" src="assets/focus.png" alt="flashStudy" />
               <p class="self-center p-2 pt-3">Flash Study</p>
             </a>
           </div>
@@ -47,23 +43,127 @@
         </div>
       </div>
     </nav>
-    <main class="h-[80vh] flex flex-row justify-center">
-        <div class="bg-[#A5C5BB]/40 rounded-2xl w-fit h-fit p-4">
-            <div id="formCard">
-        <form class="m-10" id="myForm">
-          <legend class="font-bold text-2xl py-5">Login</legend>
-          <fieldset>
-            <label for="fname">First name:</label><br />
-            <input class="bg-white rounded" type="text" id="fname" name="fname" required/><br />
-            <label for="lname">Last name:</label><br />
-            <input class="bg-white rounded" type="text" id="lname" name="lname" required/> <br>
-            <label for="uname">Username:</label><br>
-            <input class="bg-white rounded" type="text" name="uname" id="uname" required> <br><br>
-              <input class="bg-gradient-to-br from-[#2DAE31] to-[#114607]  px-3 py-1 rounded" type="Submit" value="submit">
-          </fieldset>
-        </form>
+    <!-- Section SING IN -->
+    <section id="signIn" class="grid h-[100vh] z-20 absolute w-full">
+      <!-- Container -->
+      <div class="grid md:h-screen md:grid-cols-2">
+        <!-- Component -->
+        <div class="flex flex-col items-center justify-center bg-white">
+          <!-- Wrapper -->
+          <div
+            class="max-w-lg px-5 py-16 text-center md:px-10 md:py-24 lg:py-32"
+          >
+            <!-- Title -->
+            <h2 class="mb-8 text-3xl font-bold md:mb-12 md:text-5xl">
+              Sign up to try our beta
+            </h2>
+            <!-- Form -->
+            <form
+              id="userForm"
+              class="mx-auto mb-4 max-w-sm pb-4"
+              name="wf-form-password"
+            >
+              <div class="relative">
+                <img
+                  alt=""
+                  src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6357722e2a5f190b7e37f878_EnvelopeSimple.svg"
+                  class="absolute bottom-0 left-[5%] right-auto top-[26%] inline-block"
+                />
+                <input
+                  type="email"
+                  class="mb-4 block h-9 w-full rounded-2xl bg-[#f2f2f7] px-3 py-6 pl-14 text-sm text-[#333333]"
+                  maxlength="256"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                  required=""
+                />
+              </div>
+              <div class="relative mb-4">
+                <img
+                  alt=""
+                  src="assets/user.png"
+                  class="absolute bottom-0 left-[4%] right-auto top-[26%] inline-block w-7"
+                />
+                <input
+                  type="text"
+                  class="mb-4 block h-9 w-full rounded-2xl bg-[#f2f2f7] px-3 py-6 pl-14 text-sm text-[#333333]"
+                  placeholder="Full name"
+                  name="name"
+                  id="name"
+                  required=""
+                />
+              </div>
+              <!-- Сheckbox -->
+              <label class="mb-6 flex items-center pb-12 font-medium lg:mb-1">
+                <input type="checkbox" name="checkbox" required/>
+                <span
+                  class="ml-4 inline-block cursor-pointer text-sm"
+                  for="checkbox"
+                  >I agree with the
+                  <a href="#" class="font-bold text-[#0b0b1f]"
+                    >Terms &amp; Conditions</a
+                  >
+                </span>
+              </label>
+              <!-- Button -->
+              <a
+                href="#"
+                class="hover:bg-[#114607] flex rounded-2xl items-center justify-center bg-[#2DAE31] px-8 py-4 text-center font-semibold text-white"
+              >
+                <input type="submit" class="mr-6 font-bold" value="Join Flash Study">
+                <svg
+                  class="h-4 w-4 flex-none"
+                  fill="currentColor"
+                  viewBox="0 0 20 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Arrow Right</title>
+                  <polygon
+                    points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"
+                  ></polygon>
+                </svg>
+              </a>
+            </form>
+          </div>
         </div>
+        <!-- Component -->
+        <div class="flex flex-col items-center justify-center bg-[#f2f2f7]">
+          <!-- Wrapper -->
+          <div class="max-w-lg px-5 py-16 md:px-10 md:py-24 lg:py-32">
+            <div
+              class="mb-6 ml-2 flex h-14 w-14 items-center justify-center bg-[#2DAE31] [box-shadow:#114607_-8px_8px]"
+            >
+              <img
+                src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6358f5ec37c8c32b17d1c725_Vector-9.svg"
+                alt=""
+                class="inline-block"
+              />
+            </div>
+            <p class="mb-8 text-[#647084] md:mb-12 lg:mb-16">
+              "This web app completely changed how I study. The automatic
+              flashcards and quick quizzes help me retain information faster,
+              and the ambient music keeps me focused for longer sessions. It’s
+              simple, effective, and genuinely makes studying feel effortless."
+            </p>
+            <p class="font-bold">Brian Otieno</p>
+            <p class="text-sm">University of Nairobi</p>
+          </div>
         </div>
+      </div>
+    </section>
+    <main id="main" class="hidden w-full h-[100vh] flex-row flex-nowrap my-20">
+      <div class="h-[90vh] px-10 w-[29vw] rounded-4xl bg-neutral-600 ml-17">
+
+      </div>
+      <div class="grid grid-cols-2 grid-rows-3 w-full h-[90vh] mx-6 gap-5">
+        <div id="subjecSelect" class="col-span-1 row-span-1 bg-neutral-300 rounded-3xl w-full"></div>
+        <div class="col-span-1 row-span-2 rounded-3xl w-full flex justify-center items-center">
+          <div class="bg-neutral-300 w-[80%] h-[90%] rounded-3xl"></div>
+        </div>
+        <div class="col-span-1 row-span-2 bg-neutral-300 rounded-3xl w-full"></div>
+        <div class="col-span-1 row-span-1 bg-neutral-300 rounded-3xl w-full"></div>
+      </div>
     </main>
     <footer
       class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-[#A5C5BB] rounded-3xl"
@@ -197,6 +297,13 @@
         <ul
           class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
         >
+          <li>
+            <button
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 hover:cursor-pointer"
+              >Opt Out</button
+            >
+          </li>
           <li>
             <a
               href="/"
