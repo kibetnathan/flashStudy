@@ -484,6 +484,9 @@
   .h-\[0rem\] {
     height: 0rem;
   }
+  .h-\[2\] {
+    height: 2;
+  }
   .h-\[8\] {
     height: 8;
   }
@@ -517,6 +520,18 @@
   .h-\[30rem\] {
     height: 30rem;
   }
+  .h-\[30vh\] {
+    height: 30vh;
+  }
+  .h-\[35vh\] {
+    height: 35vh;
+  }
+  .h-\[38vh\] {
+    height: 38vh;
+  }
+  .h-\[40vh\] {
+    height: 40vh;
+  }
   .h-\[50\%\] {
     height: 50%;
   }
@@ -525,6 +540,9 @@
   }
   .h-\[50rem\] {
     height: 50rem;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
   }
   .h-\[50vw\] {
     height: 50vw;
@@ -643,6 +661,9 @@
   .w-\[80-\] {
     width: 80-;
   }
+  .w-\[80\] {
+    width: 80;
+  }
   .w-\[80vw\] {
     width: 80vw;
   }
@@ -699,6 +720,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .list-decimal {
+    list-style-type: decimal;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -784,6 +808,9 @@
   }
   .justify-self-center {
     justify-self: center;
+  }
+  .overflow-scroll {
+    overflow: scroll;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -1094,6 +1121,10 @@
   .leading-12 {
     --tw-leading: calc(var(--spacing) * 12);
     line-height: calc(var(--spacing) * 12);
+  }
+  .leading-13 {
+    --tw-leading: calc(var(--spacing) * 13);
+    line-height: calc(var(--spacing) * 13);
   }
   .leading-15 {
     --tw-leading: calc(var(--spacing) * 15);
