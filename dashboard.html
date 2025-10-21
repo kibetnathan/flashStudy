@@ -251,30 +251,57 @@
         <div
           class="col-span-1 row-span-2 bg-[#A5C5BB]/60 rounded-[55px] w-full flex flex-col justify-center items-center"
         >
-        <h2 class="m-10 text-2xl text-[#2D296B]">Study Tips</h2>
-        <div class="bg-white w-[80%] h-[38vh] rounded-2xl overflow-scroll">
-          <ol class="m-10 list-decimal">
-            <li class="my-3">Active recall – Quiz yourself instead of rereading notes. It strengthens memory.</li>
-            <li  class="my-3">Spaced repetition – Review material at increasing intervals instead of cramming.</li>
-            <li  class="my-3">Pomodoro technique – Study for 25–30 minutes, take a 5-minute break, repeat.</li>
-            <li  class="my-3">Teach what you learn – Explaining concepts out loud makes them stick..</li>
-            <li  class="my-3">Mix subjects – Study multiple topics in a session to avoid mental fatigue.</li>
-            <li  class="my-3">Use flashcards – Great for key terms, formulas, and quick recall practice.</li>
-            <li  class="my-3">Eliminate distractions – Silence notifications and keep your phone away.</li>
-            <li  class="my-3">Stay hydrated and sleep well – Your brain needs rest and water to perform.</li>
-            <li  class="my-3">Set daily goals – Break big tasks into smaller, clear objectives to stay motivated.</li>
-          </ol>
+          <h2 class="m-10 text-2xl text-[#2D296B]">Study Tips</h2>
+          <div class="bg-white w-[80%] h-[38vh] rounded-2xl overflow-scroll">
+            <ol class="m-10 list-decimal">
+              <li class="my-3">
+                Active recall – Quiz yourself instead of rereading notes. It
+                strengthens memory.
+              </li>
+              <li class="my-3">
+                Spaced repetition – Review material at increasing intervals
+                instead of cramming.
+              </li>
+              <li class="my-3">
+                Pomodoro technique – Study for 25–30 minutes, take a 5-minute
+                break, repeat.
+              </li>
+              <li class="my-3">
+                Teach what you learn – Explaining concepts out loud makes them
+                stick..
+              </li>
+              <li class="my-3">
+                Mix subjects – Study multiple topics in a session to avoid
+                mental fatigue.
+              </li>
+              <li class="my-3">
+                Use flashcards – Great for key terms, formulas, and quick recall
+                practice.
+              </li>
+              <li class="my-3">
+                Eliminate distractions – Silence notifications and keep your
+                phone away.
+              </li>
+              <li class="my-3">
+                Stay hydrated and sleep well – Your brain needs rest and water
+                to perform.
+              </li>
+              <li class="my-3">
+                Set daily goals – Break big tasks into smaller, clear objectives
+                to stay motivated.
+              </li>
+            </ol>
+          </div>
         </div>
-      </div>
-        <div class="col-span-1 row-span-1 w-full flex items-center">
-          <span class="text-[180px] text-center text-[#2D296B]">00:00</span>
+        <div class="col-span-1 row-span-1 w-full flex items-center justify-center">
+          <span id="clock" class="text-[180px] text-center text-[#2D296B]">00:00</span>
         </div>
       </div>
       <div id="flashcards" class="hidden h-full w-full">
         <div class="flex flex-col w-full h-fit">
           <div class="w-full h-fit flex justify-between px-10 pt-5">
             <span class="text-[3rem] w-fit"><span id="progress">00</span></span>
-            <span class="text-[3rem] w-fit">00:00</span>
+            <!-- <span class="text-[3rem] w-fit">00:00</span> -->
           </div>
           <div
             class="h-[60vh] w-[90%] mx-13 bg-[#A5C5BB]/80 box-border rounded-[55px] flex flex-col justify-center items-center"
@@ -320,7 +347,7 @@
             title="Company"
             class="inline-flex items-center"
           >
-            <img src="assets/" alt="">
+            <img class="w-8" src="assets/focus.png" alt="" />
             <span
               class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
               >flashStudy</span
@@ -328,12 +355,10 @@
           </a>
           <div class="mt-6 lg:max-w-sm">
             <p class="text-sm text-gray-800">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+             Flash Study helps students study more effectively by providing preset flashcard-style questions across subjects.
             </p>
             <p class="mt-4 text-sm text-gray-800">
-              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
+            Users can easily navigate, reset, and review questions without needing a back end — a simple, fast, and distraction-free study tool.
             </p>
           </div>
         </div>
@@ -344,34 +369,23 @@
           <div class="flex">
             <p class="mr-1 text-gray-800">Phone:</p>
             <a
-              href="tel:850-123-5021"
-              aria-label="Our phone"
-              title="Our phone"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >850-123-5021</a
+              >+254-798-555-555</a
             >
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Email:</p>
             <a
-              href="mailto:info@lorem.mail"
-              aria-label="Our email"
-              title="Our email"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >info@lorem.mail</a
+              >info@flashstudy.co.ke</a
             >
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Address:</p>
             <a
-              href="https://www.google.com/maps"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Our address"
-              title="Our address"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              312 Lovely Street, NY
+              42 Maple Crescent, Riverview Estate, Nairobi, Kenya
             </a>
           </div>
         </div>
@@ -413,8 +427,7 @@
             </a>
           </div>
           <p class="mt-4 text-sm text-gray-500">
-            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-            spare ribs salami.
+           Follow us on social media to follow our journey. 
           </p>
         </div>
       </div>
@@ -422,7 +435,7 @@
         class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row"
       >
         <p class="text-sm text-gray-600">
-          © Copyright 2020 Lorem Inc. All rights reserved.
+          © Copyright 2025 Flash Study. All rights reserved.
         </p>
         <ul
           class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
