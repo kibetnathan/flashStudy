@@ -96,7 +96,7 @@
               </div>
               <!-- Сheckbox -->
               <label class="mb-6 flex items-center pb-12 font-medium lg:mb-1">
-                <input type="checkbox" name="checkbox" required/>
+                <input type="checkbox" name="checkbox" required />
                 <span
                   class="ml-4 inline-block cursor-pointer text-sm"
                   for="checkbox"
@@ -111,7 +111,11 @@
                 href="#"
                 class="hover:bg-[#114607] flex rounded-2xl items-center justify-center bg-[#2DAE31] px-8 py-4 text-center font-semibold text-white"
               >
-                <input type="submit" class="mr-6 font-bold" value="Join Flash Study">
+                <input
+                  type="submit"
+                  class="mr-6 font-bold"
+                  value="Join Flash Study"
+                />
                 <svg
                   class="h-4 w-4 flex-none"
                   fill="currentColor"
@@ -153,55 +157,141 @@
       </div>
     </section>
     <main id="main" class="hidden w-full h-[100vh] flex-row flex-nowrap my-20">
-      <div id="sidebar" class="h-[90vh] px-10 w-[29vw] rounded-4xl bg-[#A5C5BB] ml-17">
+      <div
+        id="sidebar"
+        class="h-[90vh] px-10 w-[29vw] rounded-4xl bg-[#A5C5BB] ml-17"
+      >
         <ul class="m-8 mt-20 leading-20 text-xl">
-          <li id="mainButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/menu.png" class="h-5 pr-1"><span>Main</span></li>
-          <li id="flashcardsButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/cards.png" class="h-7 pr-1"><span>Flashcards</span></li>
-          <li id="quizzesButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/online-test.png" class="h-7 pr-1"><span>Quizzes</span></li>
-          <li id="audioButton" class="flex flex-row items-center hover:cursor-pointer"><img src="assets/musical-note.png" class="h-6 pr-1"><span class="leading-5">Music & Ambience</span></li>
+          <li
+            id="mainButton"
+            class="flex flex-row items-center hover:cursor-pointer"
+          >
+            <img src="assets/menu.png" class="h-5 pr-1" /><span>Main</span>
+          </li>
+          <li
+            id="flashcardsButton"
+            class="flex flex-row items-center hover:cursor-pointer"
+          >
+            <img src="assets/cards.png" class="h-7 pr-1" /><span
+              >Flashcards</span
+            >
+          </li>
+          <li
+            id="quizzesButton"
+            class="flex flex-row items-center hover:cursor-pointer pb-10"
+          >
+            <img src="assets/online-test.png" class="h-7 pr-1" /><span
+              class="leading-5"
+              >Quizzes (Coming soon)</span
+            >
+          </li>
+          <li
+            id="audioButton"
+            class="flex flex-row items-center hover:cursor-pointer"
+          >
+            <img src="assets/musical-note.png" class="h-6 pr-1" /><span
+              class="leading-5"
+              >Music & Ambience</span
+            >
+          </li>
         </ul>
       </div>
-      <div  id="mainMenu" class="flex flex-col lg:grid grid-cols-2 grid-rows-3 w-full h-[90vh] mx-6 gap-5">
-        <div id="subjecSelect" class="col-span-1 row-span-1 bg-[#A5C5BB]/60 rounded-[55px] w-full flex flex-col">
-          <h3 class="pl-10 pt-7 text-2xl text-[#2D296B]">Subjects</h3>
-          <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
-            <option value="Microbiology">Microbiology</option>
-            <option value="CS50">Harvard CS50</option>
-            <option value="German">German</option>
-          </select>
-          <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
-            <option value="Microbiology">Microbiology</option>
-            <option value="CS50">Harvard CS50</option>
-            <option value="German">German</option>
-          </select>
+      <div
+        id="mainMenu"
+        class="flex flex-col lg:grid grid-cols-2 grid-rows-3 w-full h-[90vh] mx-6 gap-5"
+      >
+        <div
+          id="subjecSelect"
+          class="col-span-1 row-span-1 bg-[#A5C5BB]/60 rounded-[55px] w-full flex flex-col"
+        >
+          <h3 class="pl-10 pt-7 text-2xl text-[#2D296B]">Subject Set Select</h3>
           <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
             <option value="Microbiology">Microbiology</option>
             <option value="CS50">Harvard CS50</option>
             <option value="German">German</option>
           </select>
         </div>
-        <div class="col-span-1 row-span-2 rounded-[55px] w-full flex justify-center items-center">
-          <div class=" bg-[#A5C5BB]/60 w-[80%] h-[100%] rounded-[55px] flex flex-col">
-            <div class="bg-black h-[300px] w-[300px] rounded-[55px] self-center mt-10">
-              <img class="rounded-[inherit]" src="assets/desk.jpg" alt="default song">
+        <div
+          class="col-span-1 row-span-2 rounded-[55px] w-full flex justify-center items-center"
+        >
+          <div
+            class="bg-[#A5C5BB]/60 w-[80%] h-[100%] rounded-[55px] flex flex-col"
+          >
+            <div
+              class="bg-black h-[300px] w-[300px] rounded-[55px] self-center mt-10"
+            >
+              <img
+                class="rounded-[inherit]"
+                src="assets/desk.jpg"
+                alt="default song"
+              />
             </div>
             <div class="flex justify-center my-2">
               <span class="text-2xl">Song name</span>
             </div>
             <div class="flex flex-row flex-nowrap justify-center">
-              <img draggable="false" src="assets/rewind-symbol.png" class="h-20 m-5">
-              <img draggable="false" src="assets/play-button-arrowhead.png" class="h-20 m-5">
-              <img draggable="false" src="assets/fast-forward.png" class="h-20 m-5">
+              <img
+                draggable="false"
+                src="assets/rewind-symbol.png"
+                class="h-20 m-5"
+              />
+              <img
+                draggable="false"
+                src="assets/play-button-arrowhead.png"
+                class="h-20 m-5"
+              />
+              <img
+                draggable="false"
+                src="assets/fast-forward.png"
+                class="h-20 m-5"
+              />
             </div>
           </div>
         </div>
-        <div class="col-span-1 row-span-2  bg-[#A5C5BB]/60 rounded-[55px] w-full"></div>
+        <div
+          class="col-span-1 row-span-2 bg-[#A5C5BB]/60 rounded-[55px] w-full"
+        ></div>
         <div class="col-span-1 row-span-1 w-full flex items-center">
           <span class="text-[180px] text-center text-[#2D296B]">00:00</span>
         </div>
       </div>
-      <div id="flashcards" class="hidden h-full w-full bg-amber-50"></div>
-      <div id="quizzesSection" class="hidden h-full w-full bg-neutral-300"></div>
+      <div id="flashcards" class="hidden h-full w-full">
+        <div class="flex flex-col w-full h-fit">
+          <div class="w-full h-fit flex justify-between px-10 pt-5">
+            <span class="text-[3rem] w-fit"><span id="progress">00</span></span>
+            <span class="text-[3rem] w-fit">00:00</span>
+          </div>
+          <div
+            class="h-[60vh] w-[90%] mx-13 bg-[#A5C5BB]/80 box-border rounded-[55px] flex flex-col justify-center items-center"
+          >
+            <div
+              id="questionDisplay"
+              class="text-[2.5rem] w-[80%] text-center my-10 text-[#2D296B]"
+            >
+              Here's a default question to fit the default space!
+            </div>
+            <div class="h-1 w-full bg-[#114607]"></div>
+          </div>
+          <div class="flex flex-row justify-between w-full h-fit">
+            <div
+              onclick="resetQuestions()"
+              class="bg-[#A5C5BB] text-[#2D296B] h-20 w-[40%] m-5 mx-15 rounded-2xl flex items-center justify-center text-2xl hover:cursor-pointer"
+            >
+              Reset
+            </div>
+            <div
+              onclick="nextQuestion()"
+              class="bg-[#2DAE31] text-[#2D296B] h-20 w-[40%] m-5 mx-15 rounded-2xl flex items-center justify-center text-2xl hover:cursor-pointer"
+            >
+              Good
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="quizzesSection"
+        class="hidden h-full w-full bg-neutral-300"
+      ></div>
       <div id="audioSection" class="hidden h-full w-full bg-yellow-300"></div>
     </main>
     <footer
@@ -340,8 +430,9 @@
             <button
               href="/"
               class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 hover:cursor-pointer"
-              >Opt Out</button
             >
+              Opt Out
+            </button>
           </li>
           <li>
             <a
