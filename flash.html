@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
-    <title>Flash Study</title>
+    <title>Flashcards - flashStudy</title>
   </head>
-  <body class="bg-[#F5F5FF]">
+  <body>
     <nav
       class="sticky inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-[#F5F5FF]/60 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg"
     >
@@ -14,11 +14,7 @@
         <div class="flex items-center justify-between">
           <div class="flex shrink-0">
             <a aria-current="page" class="flex items-center h-fit" href="/">
-              <img
-                class="h-7 w-auto"
-                src="assets/focus.png"
-                alt="flashStudy"
-              />
+              <img class="h-7 w-auto" src="assets/focus.png" alt="flashStudy" />
               <p class="self-center p-2 pt-3">Flash Study</p>
             </a>
           </div>
@@ -40,114 +36,14 @@
           <div class="flex items-center justify-end gap-3">
             <a
               class="inline-flex items-center justify-center rounded-xl bg-[#2DAE31] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-[#114607] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-              href="dashboard.html"
+              href="/login"
               >Dashboard</a
             >
           </div>
         </div>
       </div>
     </nav>
-
-    <header class="px-3 py-5 bg-[#A5C5BB] lg:py-10">
-      <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
-        <div
-          class="order-2 lg:order-1 flex flex-col justify-center items-center"
-        >
-          <p class="text-4xl font-bold md:text-7xl text-[#2DAE31]">
-            Flash Study
-          </p>
-          <p class="text-4xl font-bold md:text-5xl text-[#2D296B]">
-            Upgrade your study habits
-          </p>
-          <p class="mt-2 text-sm md:text-lg text-[#114607]">
-            Get Started with us!
-          </p>
-          <a
-            class="text-lg md:text-2xl bg-[#2DAE31] text-white py-2 px-5 mt-10 hover:bg-[#114607] rounded-2xl"
-            href="setselect.html"
-            >Get Started now!</a
-          >
-        </div>
-        <div class="order-1 lg:order-2">
-          <img
-            class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-4xl"
-            src="assets/desk.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </header>
-    <main class="">
-      <section>
-        <div
-          class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl"
-        >
-          <h4 class="p-10 text-3xl font-bold sm:text-5xl w-full text-center text-[#2DAE31]">
-            Why use Flash Study?
-          </h4>
-          <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-            <div class="p-6">
-              <img
-                class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                src="assets/desk.jpg"
-                alt="blog"
-              />
-
-              <h1
-                class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-[#114607] lg:text-3xl"
-              >
-                Flashcards for Active Recall:
-              </h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">
-                The app automatically generates flashcards from your chosen
-                topic. This feature encourages active recall, helping students
-                strengthen memory and understanding by repeatedly retrieving key
-                information rather than just rereading notes.
-              </p>
-              <div class="mt-4"></div>
-            </div>
-            <div class="p-6">
-              <img
-                class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                src="assets/desk.jpg"
-                alt="blog"
-              />
-
-              <h1
-                class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-[#114607] lg:text-3xl"
-              >
-                Short Quizzes for Self-Assessment:
-              </h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">
-                After reviewing a topic, the app creates short quizzes to test comprehension. This lets learners immediately identify weak points, track progress, and reinforce what they’ve learned — making study sessions more focused and effective.
-              </p>
-              <div class="mt-4">
-                
-              </div>
-            </div>
-            <div class="p-6">
-              <img
-                class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                src="assets/desk.jpg"
-                alt="blog"
-              />
-
-              <h1
-              class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-[#114607] lg:text-3xl"
-              >
-                YouTube Integration for Deeper Understanding:
-              </h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">
-                The app fetches relevant YouTube videos for the selected subject. This gives students quick access to visual explanations and real-world examples, supporting different learning styles and keeping studying engaging and dynamic.
-              </p>
-              <div class="mt-4">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-   <footer
+    <footer
       class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-[#A5C5BB] rounded-3xl"
     >
       <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -166,10 +62,13 @@
           </a>
           <div class="mt-6 lg:max-w-sm">
             <p class="text-sm text-gray-800">
-             Flash Study helps students study more effectively by providing preset flashcard-style questions across subjects.
+              Flash Study helps students study more effectively by providing
+              preset flashcard-style questions across subjects.
             </p>
             <p class="mt-4 text-sm text-gray-800">
-            Users can easily navigate, reset, and review questions without needing a back end — a simple, fast, and distraction-free study tool.
+              Users can easily navigate, reset, and review questions without
+              needing a back end — a simple, fast, and distraction-free study
+              tool.
             </p>
           </div>
         </div>
@@ -238,7 +137,7 @@
             </a>
           </div>
           <p class="mt-4 text-sm text-gray-500">
-           Follow us on social media to follow our journey. 
+            Follow us on social media to follow our journey.
           </p>
         </div>
       </div>
@@ -251,6 +150,14 @@
         <ul
           class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
         >
+          <li>
+            <button
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 hover:cursor-pointer"
+            >
+              Opt Out
+            </button>
+          </li>
           <li>
             <a
               href="/"
@@ -275,6 +182,5 @@
         </ul>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

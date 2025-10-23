@@ -43,146 +43,64 @@
         </div>
       </div>
     </nav>
-    
+
     <main class="flex w-full h-[100vh] flex-row flex-nowrap my-20">
       <div
         id="sidebar"
-        class="h-[90vh] px-10 w-[29vw] rounded-4xl bg-[#A5C5BB] ml-17"
+        class="flex flex-col items-center h-[100vh] w-[16vw] rounded-4xl bg-[#A5C5BB] ml-17"
       >
-        <ul class="m-8 mt-20 leading-20 text-xl">
-          <li
-            id="mainButton"
-            class="flex flex-row items-center hover:cursor-pointer"
-          >
-            <img src="assets/menu.png" class="h-5 pr-1" /><span>Main</span>
-          </li>
-          <li
-            id="flashcardsButton"
-            class="flex flex-row items-center hover:cursor-pointer"
-          >
-            <img src="assets/cards.png" class="h-7 pr-1" /><span
-              >Flashcards</span
-            >
-          </li>
-          <li
-            id="quizzesButton"
-            class="flex flex-row items-center hover:cursor-pointer pb-10"
-          >
-            <img src="assets/online-test.png" class="h-7 pr-1" /><span
-              class="leading-5"
-              >Quizzes (Coming soon)</span
-            >
-          </li>
-          <li
-            id="audioButton"
-            class="flex flex-row items-center hover:cursor-pointer"
-          >
-            <img src="assets/musical-note.png" class="h-6 pr-1" /><span
-              class="leading-5"
-              >Music & Ambience</span
-            >
-          </li>
-        </ul>
+        <div>
+          <ul class="py-8">
+            <li class="py-5">
+              <a href="setselect.html"><img src="assets/material-symbols_home-rounded.svg" alt="home" /></a>
+            </li>
+            <li class="py-5">
+              <img src="assets/basil_stack-solid.svg" alt="decks" />
+            </li>
+            <li class="py-5">
+              <img src="assets/material-symbols_quiz.svg" alt="quizzes" />
+            </li>
+            <li class="py-5">
+              <img src="assets/mingcute_plus-fill.svg" alt="addDeck" />
+            </li>
+          </ul>
+        </div>
+        <div class="h-1 bg-black w-[100%]"></div>
+        <div
+          class="h-full w-[100%] flex flex-col justify-end items-center mb-5"
+        >
+          <div><img src="assets/tabler_user-filled.svg" alt="profile" /></div>
+        </div>
       </div>
       <div
         id="mainMenu"
-        class="flex flex-col lg:grid grid-cols-2 grid-rows-3 w-full h-[90vh] mx-6 gap-5"
+        class="flex flex-col lg:grid grid-cols-1 grid-rows-5 w-full h-[100vh] mx-6"
       >
-        <div
-          id="subjecSelect"
-          class="col-span-1 row-span-1 bg-[#A5C5BB]/60 rounded-[55px] w-full flex flex-col"
-        >
-          <h3 class="pl-10 pt-7 text-2xl text-[#2D296B]">Subject Set Select</h3>
-          <select class="h-10 w-[80%] bg-white mx-auto mt-1 rounded-2xl p-2">
-            <option value="Microbiology">Microbiology</option>
-            <option value="CS50">Harvard CS50</option>
-            <option value="German">German</option>
-          </select>
+        <div class="row-span-1">
+          <h2 class="text-5xl mt-5 font-semibold">Set Name</h2>
         </div>
-        <div
-          class="col-span-1 row-span-2 rounded-[55px] w-full flex justify-center items-center"
-        >
-          <div
-            class="bg-[#A5C5BB]/60 w-[80%] h-[100%] rounded-[55px] flex flex-col"
-          >
+        <div class="row-span-4 h-full bg-neutral-200 w-full flex flex-col">
+          <div class="flex flex-row w-full h-fit">
             <div
-              class="bg-black h-[300px] w-[300px] rounded-[55px] self-center mt-10"
+              class="w-[50%] h-fit px-[3em] py-6 text-3xl bg-neutral-400 rounded-t-3xl"
             >
-              <img
-                class="rounded-[inherit]"
-                src="assets/desk.jpg"
-                alt="default song"
-              />
+              Description
             </div>
-            <div class="flex justify-center my-2">
-              <span class="text-2xl">Song name</span>
-            </div>
-            <div class="flex flex-row flex-nowrap justify-center">
-              <img
-                draggable="false"
-                src="assets/rewind-symbol.png"
-                class="h-20 m-5"
-              />
-              <img
-                draggable="false"
-                src="assets/play-button-arrowhead.png"
-                class="h-20 m-5"
-              />
-              <img
-                draggable="false"
-                src="assets/fast-forward.png"
-                class="h-20 m-5"
-              />
+            <div class="w-[50%] h-fit px-[3em] py-6 text-3xl rounded-t-3xl">
+              Decks(<span>00</span>)
             </div>
           </div>
-        </div>
-        <div
-          class="col-span-1 row-span-2 bg-[#A5C5BB]/60 rounded-[55px] w-full flex flex-col justify-center items-center"
-        >
-          <h2 class="m-10 text-2xl text-[#2D296B]">Study Tips</h2>
-          <div class="bg-white w-[80%] h-[38vh] rounded-2xl overflow-scroll">
-            <ol class="m-10 list-decimal">
-              <li class="my-3">
-                Active recall – Quiz yourself instead of rereading notes. It
-                strengthens memory.
-              </li>
-              <li class="my-3">
-                Spaced repetition – Review material at increasing intervals
-                instead of cramming.
-              </li>
-              <li class="my-3">
-                Pomodoro technique – Study for 25–30 minutes, take a 5-minute
-                break, repeat.
-              </li>
-              <li class="my-3">
-                Teach what you learn – Explaining concepts out loud makes them
-                stick..
-              </li>
-              <li class="my-3">
-                Mix subjects – Study multiple topics in a session to avoid
-                mental fatigue.
-              </li>
-              <li class="my-3">
-                Use flashcards – Great for key terms, formulas, and quick recall
-                practice.
-              </li>
-              <li class="my-3">
-                Eliminate distractions – Silence notifications and keep your
-                phone away.
-              </li>
-              <li class="my-3">
-                Stay hydrated and sleep well – Your brain needs rest and water
-                to perform.
-              </li>
-              <li class="my-3">
-                Set daily goals – Break big tasks into smaller, clear objectives
-                to stay motivated.
-              </li>
-            </ol>
+          <div class="flex flex-col h-full"
+          ><div class="h-[55%] w-full bg-neutral-100">
+            <h2 class="mx-3 my-7 text-4xl underline font-semibold">Headline</h2>
+            <p class="text-3xl mx-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+              error assumenda quaerat, totam quod nesciunt?
           </div>
-        </div>
-        <div class="col-span-1 row-span-1 w-full flex items-center justify-center">
-          <span id="clock" class="text-[180px] text-center text-[#2D296B]">00:00</span>
+          <div class="w-full h-full bg-neutral-400">
+            <p class="mx-3 my-10 text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos qui ratione  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum  quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam  eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat  voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse  quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo  voluptas nulla pariatur?</p>
+          </div></div>
+          
         </div>
       </div>
       <div id="flashcards" class="hidden h-full w-full">
@@ -243,10 +161,13 @@
           </a>
           <div class="mt-6 lg:max-w-sm">
             <p class="text-sm text-gray-800">
-             Flash Study helps students study more effectively by providing preset flashcard-style questions across subjects.
+              Flash Study helps students study more effectively by providing
+              preset flashcard-style questions across subjects.
             </p>
             <p class="mt-4 text-sm text-gray-800">
-            Users can easily navigate, reset, and review questions without needing a back end — a simple, fast, and distraction-free study tool.
+              Users can easily navigate, reset, and review questions without
+              needing a back end — a simple, fast, and distraction-free study
+              tool.
             </p>
           </div>
         </div>
@@ -315,7 +236,7 @@
             </a>
           </div>
           <p class="mt-4 text-sm text-gray-500">
-           Follow us on social media to follow our journey. 
+            Follow us on social media to follow our journey.
           </p>
         </div>
       </div>
